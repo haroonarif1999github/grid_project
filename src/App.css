@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+.container{
+  max-width: 1000px;
+  height: 600px;
+  border: 10px solid red;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  
+  grid-auto-rows: 100px;
+  gap: 10px;
+/* grid-auto-flow: dense; */
+ /* implicit jo browser define krna
+ explicit jo hum apni marzi sa krta */
+
+ justify-items:center ; 
+ /* //work on y-exis */
+ align-items: center; 
+ /* //work on x exis */
+/* justify-content: space-between; */
+ place-content: center;
+}
+.item{
+background: red;
+color: white;
+padding:10px ;
+border: 2px solid black;
+}
+/* .item1{
+ grid-column: 1/-1;
+}
+/* .item7 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+} */
+/* .item11{
+  grid-column-start: 4;
+  grid-column-end: 6;
+} */ 
